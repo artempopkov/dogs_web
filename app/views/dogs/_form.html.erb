@@ -1,0 +1,42 @@
+<%= form_with(model: dog, html:{class: 'm-3 '}) do |form| %>
+  <% if dog.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(dog.errors.count, "error") %> prohibited this dog from being saved:</h2>
+
+      <ul>
+        <% dog.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= form.label :name %>
+  <div class="input-group">
+    <%= form.text_field :name, class: "form-control mb-3" %>
+  </div>
+
+  <%= form.label :age %>
+  <div class="input-group">
+    <%= form.text_field :age, class: "form-control mb-3" %>
+  </div>
+
+  <%= form.label :color %>
+  <div class="input-group">
+    <%= form.text_field :color, class: "form-control mb-3" %>
+  </div>
+
+  <%= form.label :breed %>
+  <div class="input-group">
+    <%= form.text_field :breed, class: "form-control mb-3" %>
+  </div>
+
+  <%= form.label :owner %>
+  <div class="input-group">
+    <%= form.text_field :owner, class: "form-control mb-3" %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit class: 'btn btn-primary' %>
+  </div>
+<% end %>

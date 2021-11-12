@@ -1,0 +1,16 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  database: dogs_web_development
+  username: app
+  password: 12345
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  database: dogs_web_test
+  username: app
+  password: 12345
+
