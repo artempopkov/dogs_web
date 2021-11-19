@@ -5,7 +5,6 @@ set :repo_url, 'git@github.com:artempopkov/dogs_web.git'
 ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 
 # Default value for :scm is :git
-set :scm, :git
 
 # Default value for :format is :pretty
 set :format, :pretty
