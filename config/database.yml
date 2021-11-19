@@ -14,7 +14,7 @@ test:
   username: app
   password: 12345
 
-producton:
+production:
   adapter: postgresql
   encoding: unicode
   pool: 5
