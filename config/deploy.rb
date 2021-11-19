@@ -6,6 +6,7 @@ set :application,     'dogs_web'
 set :user,            'deployer'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
+set :branch,        :main
 
 # Don't change these unless you know what you're doing
 set :pty,             true
@@ -25,7 +26,7 @@ set :puma_init_active_record, true  # Change to false when not using ActiveRecor
 
 ## Defaults:
 # set :scm,           :git
- set :branch,        :main
+
  set :format,        :pretty
 # set :log_level,     :debug
 # set :keep_releases, 5
