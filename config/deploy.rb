@@ -1,5 +1,5 @@
 # Change these
-server '167.99.131.238', port: 80, roles: [:web, :app, :db], primary: true
+server '167.99.131.238', port: 22, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:artempopkov/dogs_web.git'
 set :application,     'dogs_web'
