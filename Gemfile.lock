@@ -126,8 +126,6 @@ GEM
       net-ssh (>= 2.6.5, < 7.0.0)
     net-ssh (6.1.0)
     nio4r (2.5.8)
-    nokogiri (1.12.5-x86_64-darwin)
-      racc (~> 1.4)
     nokogiri (1.12.5-x86_64-linux)
       racc (~> 1.4)
     pg (1.2.3)
@@ -236,11 +234,11 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
-  capistrano
-  capistrano-bundler
-  capistrano-rails
-  capistrano-rvm
-  capistrano3-puma
+  capistrano (~> 3.16.0)
+  capistrano-bundler (~> 2.0.1)
+  capistrano-rails (~> 1.6.1)
+  capistrano-rvm (~> 0.1.2)
+  capistrano3-puma (~> 5.2.0)
   capybara (>= 3.26)
   faker (~> 2.19.0)
   jbuilder (~> 2.7)

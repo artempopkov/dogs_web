@@ -29,11 +29,11 @@ group :development do
   gem 'spring'
   gem 'faker', '~> 2.19.0'
 
-  gem 'capistrano',         require: false
-  gem 'capistrano-rvm',     require: false
-  gem 'capistrano-rails',   require: false
-  gem 'capistrano-bundler', require: false
-  gem 'capistrano3-puma',   require: false
+  gem 'capistrano', '~> 3.16.0', require: false
+  gem 'capistrano-rvm', '~> 0.1.2',require: false
+  gem 'capistrano-rails', '~> 1.6.1', require: false
+  gem 'capistrano-bundler', '~> 2.0.1', require: false
+  gem 'capistrano3-puma', '~> 5.2.0', require: false
 
 end
 
