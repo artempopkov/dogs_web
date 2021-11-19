@@ -14,12 +14,3 @@ test:
   username: app
   password: 12345
 
-
-production:
-  adapter: postgresql
-  encoding: unicode
-  pool: 5
-  database: dogs_web_production
-  username: app
-  password: 12345
-
